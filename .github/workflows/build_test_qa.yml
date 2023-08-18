@@ -125,3 +125,26 @@ jobs:
           docker login ghcr.io -u USERNAME --password-stdin
           docker tag success-tracker:${{ needs.tag_and_release.outputs.tag_version }} ghcr.io/bengelsoft/success-tracker:${{ needs.tag_and_release.outputs.tag_version }}
           docker push ghcr.io/bengelsoft/success-tracker:${{ needs.tag_and_release.outputs.tag_version }}
+  deploy:
+    needs: tag_and_release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download dist folder
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+
+      - name: Setup page content
+        run: |
+          mkdir dist
+          mkdir dist/success-tracker
+          cp -r success-tracker dist/success-tracker
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
+           publish_dir: dist/success-tracker
+           enable_jekyll: true
