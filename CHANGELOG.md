@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.37 (2023-08-18)
+
+
+### ✨ Features
+
+* The first step towards showing the 'SuccessTrack' project to the world ([e7cac07](https://github.com/Bengelsoft/SuccessTrack/commit/e7cac07995efbfe3c466b8cbd9f9b8d8d2d98ea8))
+
 ### 0.0.36 (2023-08-10)
 
 
