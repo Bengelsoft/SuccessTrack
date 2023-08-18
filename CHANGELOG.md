@@ -27,14 +27,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 📫 Continuous Integration
 
-* remove signing key ([faf3390](https://github.com/Bengelsoft/succes-tracker/commit/faf339076054eb3342378e279c4e162014f52709))
+* remove signing key ([faf3390](https://github.com/Bengelsoft/success-tracker/commit/faf339076054eb3342378e279c4e162014f52709))
 
 ### 0.0.35 (2023-08-10)
 
 
 ### 📫 Continuous Integration
 
-* trigger to test the gpg key for signing commits ([bf2d251](https://github.com/Bengelsoft/succes-tracker/commit/bf2d2514f13ff3fb1ddc436a43154d38f0d9d99d))
+* trigger to test the gpg key for signing commits ([bf2d251](https://github.com/Bengelsoft/success-tracker/commit/bf2d2514f13ff3fb1ddc436a43154d38f0d9d99d))
 
 ### 0.0.34 (2023-08-10)
 
@@ -49,7 +49,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 📫 Continuous Integration
 
-* build docker container with release version as container tag ([9c968fb](https://github.com/Bengelsoft/succes-tracker/commit/9c968fbc09ad65a7d72bc69c507c45a113325d64))
+* build docker container with release version as container tag ([9c968fb](https://github.com/Bengelsoft/success-tracker/commit/9c968fbc09ad65a7d72bc69c507c45a113325d64))
 
 ### 0.0.29 (2023-08-09)
 
@@ -58,7 +58,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 📫 Continuous Integration
 
-* ci now also in the changelog ([e319fc2](https://github.com/Bengelsoft/succes-tracker/commit/e319fc2565b80e8efae10ae8599ed0f6c94a9a6d))
+* ci now also in the changelog ([e319fc2](https://github.com/Bengelsoft/success-tracker/commit/e319fc2565b80e8efae10ae8599ed0f6c94a9a6d))
 
 ### 0.0.27 (2023-08-09)
 
