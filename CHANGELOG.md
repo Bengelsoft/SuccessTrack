@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.40 (2023-08-18)
+
+
+### 📫 Continuous Integration
+
+* deploy project to github pages ([7c4ea7a](https://github.com/Bengelsoft/success-tracker/commit/7c4ea7ab938c186bf426fbe717072850ff88aa80))
+
 ### 0.0.39 (2023-08-18)
 
 ### 0.0.38 (2023-08-18)
