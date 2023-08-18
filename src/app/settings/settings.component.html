@@ -1,0 +1,43 @@
+<div class="grid p-fluid">
+  <div class="col-12">
+    <div class="card">
+      <h5>{{'API-Key OpenAI' | translate}}</h5>
+      <div class="grid formgrid">
+        <span class="p-float-label" style="width: 100%">
+        <p-password id="password" [(ngModel)]="apiKey" (change)="setId()"
+                    [feedback]="false" [toggleMask]="true"></p-password>
+        <label for="password">{{'API-Key OpenAI' | translate}}</label>
+        </span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h5>{{'Save changes automatically' | translate}}</h5>
+      <div class="grid formgrid">
+        <span class="p-float-label" style="width: 100%">
+          <p-inputSwitch [(ngModel)]="autoSave" (onChange)="changeAutoSave()"></p-inputSwitch>
+        </span>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h5>{{'JSON data model' | translate}}</h5>
+      <div class="grid formgrid">
+        <textarea rows="40" cols="30" placeholder="Model" pInputTextarea [(ngModel)]="succesTrackerDomain"
+                  (change)="editSuccesTrackerDomain()"></textarea>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h5>{{'AI prompts' | translate}}</h5>
+      <a routerLink="/prompts">{{'Change the AI-prompts' | translate}}</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+

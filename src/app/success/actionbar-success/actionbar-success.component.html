@@ -1,0 +1,15 @@
+<div class="layout-actions">
+  <ul>
+    <li>
+      <p-button
+                [label]="'With help from a coach'| translate" icon="pi pi-comments"
+                styleClass="p-button-rounded p-button-success" (onClick)="showCoachDialogSucces()"
+                [disabled]="isApiKeyPresent()"></p-button>
+    </li>
+    <li>
+      <p-button
+                [label]="'Write your successes' | translate" icon="pi pi-pencil icon"
+                styleClass="p-button-rounded p-button-success" (onClick)="showCreateSuccesDialog()"></p-button>
+    </li>
+  </ul>
+</div>

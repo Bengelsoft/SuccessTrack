@@ -1,0 +1,78 @@
+<div class="layout-topbar">
+  <div href="#" class="layout-topbar-logo">
+  </div>
+  <a class="layout-menu-button" href="#" (click)="app.onMenuButtonClick($event)">
+    <i class="pi pi-bars"></i>
+  </a>
+
+
+  <ul class="layout-topbar-menu" role="menu">
+    <li class="layout-topbar-item" [ngClass]="saveAction ? 'fade-out' : 'fade-in'">
+      <a class="layout-topbar-icon first">
+        <p-progressSpinner styleClass="w-3rem h-3rem" strokeWidth="3" animationDuration="1s"></p-progressSpinner>
+      </a>
+      <div class="layout-quickmenu-tooltip">
+        <div class="layout-quickmenu-tooltip-arrow"></div>
+        <div class="layout-quickmenu-tooltip-text">Auto save</div>
+      </div>
+    </li>
+
+
+    <li class="layout-topbar-item">
+      <a class="layout-topbar-icon first" (click)="save()">
+        <i class="topbar-icon pi pi-save"></i>
+      </a>
+      <div class="layout-quickmenu-tooltip">
+        <div class="layout-quickmenu-tooltip-arrow"></div>
+        <div class="layout-quickmenu-tooltip-text">{{'Save' | translate}}</div>
+      </div>
+    </li>
+    <li class="layout-topbar-item active-topmenuitem">
+      <ul>
+        <li>
+          <a class="layout-topbar-icon" (click)="openFile()">
+            <i class="topbar-icon pi pi-upload"></i>
+          </a>
+          <div class="layout-quickmenu-tooltip">
+            <div class="layout-quickmenu-tooltip-arrow"></div>
+            <div
+              class="layout-quickmenu-tooltip-text">{{'Import data from file' | translate}}
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a class="layout-topbar-icon" (click)="exportData()">
+            <i class="topbar-icon pi pi-download"></i>
+          </a>
+          <div class="layout-quickmenu-tooltip">
+            <div class="layout-quickmenu-tooltip-arrow"></div>
+            <div class="layout-quickmenu-tooltip-text">
+              {{'Export the data to a file' | translate}}
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="layout-topbar-item">
+      <a class="layout-topbar-icon" href="https://github.com/Bengelsoft/succes-tracker" target="_blank">
+        <i class="topbar-icon pi pi-github"></i>
+      </a>
+      <div class="layout-quickmenu-tooltip">
+        <div class="layout-quickmenu-tooltip-arrow"></div>
+        <div class="layout-quickmenu-tooltip-text">
+          {{'Github Project' | translate }}
+        </div>
+      </div>
+    </li>
+
+
+    <li>
+      <p-dropdown [options]="['nl', 'en', 'fr']" [(ngModel)]="selectedLang" (onChange)="changeLang()"></p-dropdown>
+      <div class="layout-quickmenu-tooltip">
+        <div class="layout-quickmenu-tooltip-arrow"></div>
+      </div>
+    </li>
+  </ul>
+</div>

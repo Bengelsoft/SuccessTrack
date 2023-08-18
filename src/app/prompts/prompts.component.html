@@ -1,0 +1,46 @@
+<div class="grid p-fluid">
+  <div class="col-12 md:col-12">
+
+    <div class="card">
+      <h3>{{'Prompt Success Coach' | translate }}</h3>
+      <h5>{{'Prompt AI config' | translate }}</h5>
+      <textarea rows="10" cols="30" pInputTextarea [ngModel]="promptsService.successChatPrompt | json"
+                (ngModelChange)="changeSuccessChatPrompt($event)"></textarea>
+
+      <h5>{{'Messages and System commands' | translate }}</h5>
+      <textarea rows="10" cols="30" pInputTextarea [(ngModel)]="promptsService.commandToAI"></textarea>
+
+      <h5>{{'Conversation starter' | translate}}</h5>
+      <textarea rows="2" cols="30" pInputTextarea [(ngModel)]="promptsService.conversationStarter"></textarea>
+    </div>
+  </div>
+
+  <div class="col-12 md:col-12">
+    <div class="card">
+      <h3>{{'Turn conversation into successes' | translate }}</h3>
+      <h5>{{'Prompt AI config' | translate }}</h5>
+      <textarea rows="30" cols="30" pInputTextarea
+                [ngModel]="promptsService.promptFunctionCallCreateSuccessesFromMessages | json"
+                (ngModelChange)="changePromptFunctionCallCreateSuccessesFromMessages($event)"></textarea>
+
+      <h5>{{'Description of the \'get_successes\' method being called.' | translate }}</h5>
+      <h6>&#123;FUNCTION_DESCRIPTION_GET_SUCCESSEN_FROM_CHAT}</h6>
+      <textarea rows="2" cols="30" pInputTextarea
+                [(ngModel)]="promptsService.descriptionOfGetSuccessenMethod"></textarea>
+
+      <h5>{{'Description Array object Success' | translate }}</h5><h6>&#123;ARRAY_OBJECT_SUCCESSES_DESCRIPTION}</h6>
+      <textarea rows="2" cols="30" pInputTextarea [(ngModel)]="promptsService.descriptionArrayObjectSuccess"></textarea>
+
+      <h5>{{'Description of the value in the text Success.description in the success object' | translate }}</h5><h6>
+      &#123;DESCRIPTION_OF_THE_TEXT_SUCCESS_DESCRIPTION}</h6>
+      <textarea rows="2" cols="30" pInputTextarea
+                [(ngModel)]="promptsService.descriptionOfTheTextSuccessDescriptionInTheSuccessObject"
+      ></textarea>
+
+      <h5>{{'List of SuccessCodes derived from the success description.' | translate }}</h5><h6>&#123;LIST_OF_SUCCESS_CODES_DERIVED_FROM_THE_SUCCESS_DESCIRPTION}</h6>
+      <textarea rows="2" cols="30" pInputTextarea
+                [(ngModel)]="promptsService.listOfSuccessCodesDerivedFromTheSuccessDescription"
+      ></textarea>
+    </div>
+  </div>
+</div>

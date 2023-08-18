@@ -1,0 +1,47 @@
+<div class="add">
+  <div class="marging" *ngFor="let success of successCreateService.newSuccessList let i=index">
+    <p-card class="p-card-body">
+      <div class="grid p-fluid">
+        <div class="col-12 mb-6 lg:col-6 lg:mb-0">
+          <h5>{{'Date' | translate}}</h5>
+          <p-calendar [(ngModel)]="success.dateOfSucces" dateFormat="dd-mm-yy" [showButtonBar]="true"
+                      [showIcon]="true"></p-calendar>
+        </div>
+      </div>
+      <div class="grid formgrid">
+
+        <div class="col-12 mb-6 lg:col-6 lg:mb-0">
+        <span>
+        <h5>
+          {{'Description of the success' | translate}}</h5>
+            <textarea rows="12" style="width: 100%;" pInputTextarea [autoResize]="true"
+                      [(ngModel)]="success.successDescription"></textarea>
+        </span>
+        </div>
+        <div class="col-12 mb-6 lg:col-6 lg:mb-0">
+          <h5>{{'The elements of success.' | translate}}
+          </h5>
+          <p-listbox [options]="succesService.elementsOfSuccess"
+                     [(ngModel)]="success.elementsOfSuccessCodes"
+                     optionValue="code" optionLabel="name"
+                     [multiple]="true" [metaKeySelection]="false"></p-listbox>
+        </div>
+
+      </div>
+      <ng-template pTemplate="footer">
+        <p-button [label]="'Save success' | translate" icon="pi pi-check"
+                  styleClass="p-button-success  p-button-rounded p-button-outlined"
+                  (onClick)="save(i)"></p-button>
+        <p-button [label]="'Remove success'| translate" icon="pi pi-times"
+                  styleClass="p-button-secondary p-button-rounded p-button-outlined"
+                  (onClick)="remove(i)"
+                  [style]="{ 'margin-left': '.5em' }"></p-button>
+      </ng-template>
+    </p-card>
+  </div>
+  <p-button (click)="add()" icon="pi pi-plus"
+            [label]="'Create new success' | translate"></p-button>
+  <div [ngClass]="successCreateService.showProgress ? 'fade-out' : 'fade-in'" class="fixed-bottom">
+    <p-progressBar mode="indeterminate" [style]="{ height: '5px' }"></p-progressBar>
+  </div>
+</div>

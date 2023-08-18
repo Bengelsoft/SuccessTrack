@@ -1,0 +1,15 @@
+<div class="layout-actionbar">
+  <div class="layout-breadcrumb">
+    <div class="route-bar-breadcrumb">
+      <ng-template ngFor let-item let-last="last" [ngForOf]="items">
+                <span>
+                    <ng-container *ngIf="!item.routerLink">{{item.label}}</ng-container>
+                    <span *ngIf="!last"> | </span>
+                </span>
+      </ng-template>
+    </div>
+  </div>
+  <ng-container *ngIf="router.routerState.snapshot.url =='/success'">
+    <app-actionbar-success></app-actionbar-success>
+  </ng-container>
+</div>

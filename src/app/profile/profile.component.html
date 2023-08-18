@@ -1,0 +1,11 @@
+<div class="grid p-fluid">
+  <div class="col-12 md:col-12">
+    <div class="card">
+      <h5 >{{'First name' | translate}}</h5>
+      <div class="grid formgrid">
+        <input type="text" pInputText [placeholder]="'Your first name' | translate" [(ngModel)]="user.name"
+               (change)="onChangeUserName()">
+      </div>
+    </div>
+  </div>
+</div>

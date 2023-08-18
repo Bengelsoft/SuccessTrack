@@ -1,0 +1,6 @@
+projectKey=success-tracker
+serverUrl=http://localhost:9000
+serverVersion=10.1.0.73491
+dashboardUrl=http://localhost:9000/dashboard?id=success-tracker
+ceTaskId=AYnmz21betWolQ1Qbu3g
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYnmz21betWolQ1Qbu3g

@@ -1,0 +1,76 @@
+.message {
+  border-radius: 50px;
+  margin: 0 15px 20px;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 20px;
+}
+
+.message.to {
+  background-color: #2095FE;
+  color: #fff;
+  margin-left: 100px;
+  text-align: right;
+}
+
+.message.from {
+  background-color: #E5E4E9;
+  color: #363636;
+  margin-right: 100px;
+}
+
+.message.to + .message.to,
+.message.from + .message.from {
+  margin-top: -10px;
+}
+
+.content-body {
+  height: 100%
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: right;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120px
+}
+
+/* CSS styles for the content */
+.chat {
+  height: auto;
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 80px; /* Set the margin-bottom to the height of the footer */
+}
+
+.fixed-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 120px;
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-out.hide {
+  opacity: 0;
+}

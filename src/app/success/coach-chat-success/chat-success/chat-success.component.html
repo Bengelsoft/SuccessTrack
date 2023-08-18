@@ -1,0 +1,35 @@
+<div>
+  <span>{{'Success is dependent on one or more of the following elements:' | translate }}</span>
+  <p-tag severity="info" *ngFor="let element of succesService.elementsOfSuccess"
+         [rounded]="true">{{element.name | translate}}</p-tag>
+</div>
+
+<div id="chat" class="chat">
+  <ng-container *ngFor="let message of chatService.conversation | async">
+    <div class="message" [ngClass]="{from: message.role === 'assistant',to: message.role === 'user'}">
+      {{ message.content }}
+    </div>
+  </ng-container>
+</div>
+<div [ngClass]="progress ? 'fade-out' : 'fade-in'" class="fixed-bottom">
+  <p-progressBar mode="indeterminate" [style]="{ height: '3px' }"></p-progressBar>
+</div>
+
+<div class="footer">
+  <div class="grid">
+    <div class="col-12 md:col-10">
+                  <textarea rows="3" style="width: 100%;" pInputTextarea [autoResize]="true"
+                            [(ngModel)]="value" (keyup.enter)="sendMessage()" style="width: 100%"></textarea>
+    </div>
+    <div class="col-12 md:col-2">
+      <button pButton [label]="'chat' | translate" icon="pi pi-send" iconPos="right"
+              style="width: 100%" (click)="sendMessage()"
+              class="p-button-outlined p-button-success"></button>
+
+      <button pButton [label]="'take over'| translate"
+              icon="pi pi-copy" iconPos="right" style="width: 100%"
+              (click)="createResume()"
+              class="p-button-outlined p-button-success"></button>
+    </div>
+  </div>
+</div>
