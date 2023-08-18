@@ -1,10 +1,10 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Repository License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg)](LICENSE)
-[![CI/CD Workflow](https://github.com/Bengelsoft/SuccessTrack/actions/workflows/build_test_qa.yml/badge.svg)](https://github.com/Bengelsoft/SuccessTrack/actions/workflows/build_test_qa.yml)
+[![CI/CD Workflow](https://github.com/Bengelsoft/SuccessTracker/actions/workflows/build_test_qa.yml/badge.svg)](https://github.com/Bengelsoft/SuccessTracker/actions/workflows/build_test_qa.yml)
 
-# SuccessTrack
-SuccessTrack: A personal success diary with an AI coach.
+# SuccessTracker
+SuccessTracker: A personal success diary with an AI coach.
 Recording your successes will help you boost your self-esteem and shrink your ego.
 
 The development of SuccessTrack aims to accelerate and support personal growth. The goal is to extend the tool with support for:

@@ -118,10 +118,10 @@ jobs:
           mkdir dist
           mkdir dist/success-tracker
           cp -r success-tracker dist/success-tracker
-          docker build . -t success-tracker-image:${{ needs.tag_and_release.outputs.tag_version }} -f Containerfile
+          docker build . -t success-tracker:${{ needs.tag_and_release.outputs.tag_version }} -f Containerfile
       - name: Push Docker image
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} |
           docker login ghcr.io -u USERNAME --password-stdin
-          docker tag success-tracker-image:${{ needs.tag_and_release.outputs.tag_version }} ghcr.io/bengelsoft/success-tracker-image:${{ needs.tag_and_release.outputs.tag_version }}
-          docker push ghcr.io/bengelsoft/success-tracker-image:${{ needs.tag_and_release.outputs.tag_version }}
+          docker tag success-tracker:${{ needs.tag_and_release.outputs.tag_version }} ghcr.io/bengelsoft/success-tracker:${{ needs.tag_and_release.outputs.tag_version }}
+          docker push ghcr.io/bengelsoft/success-tracker:${{ needs.tag_and_release.outputs.tag_version }}
