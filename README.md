@@ -1,7 +1,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Repository License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg)](LICENSE)
-[![CI/CD Workflow](https://github.com/Bengelsoft/succes-tracker/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Bengelsoft/succes-tracker/actions/workflows/main.yml)
+[![CI/CD Workflow](https://github.com/Bengelsoft/SuccessTrack/actions/workflows/build_test_qa.yml/badge.svg)](https://github.com/Bengelsoft/SuccessTrack/actions/workflows/build_test_qa.yml)
 
 # SuccessTrack
 SuccessTrack: A personal success diary with an AI coach.
