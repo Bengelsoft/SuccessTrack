@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.46 (2024-05-16)
+
+
+### 📝 Documentation
+
+* An incorrect reference in the documentation to the build pipeline has been corrected. ([641f2c8](https://github.com/Bengelsoft/success-tracker/commit/641f2c8ae486c158caca5a340006914d5c4ae936))
+
 ### 0.0.45 (2024-05-16)
 
 
