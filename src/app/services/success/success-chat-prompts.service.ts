@@ -14,7 +14,7 @@ export class SuccessChatPromptsService {
   }
 
   successChatPrompt: AiChatModel = {
-    "model": "gpt-4",
+    "model": "gpt-4o",
     "messages": [],
     "temperature": 1,
     "max_tokens": 256,
@@ -111,7 +111,7 @@ export class SuccessChatPromptsService {
 
 
   public promptFunctionCallCreateSuccessesFromMessages: any = {
-    "model": "gpt-4-0613",
+    "model": "gpt-4o",
     "temperature": 1.0,
     "max_tokens": 750,
     "top_p": 1,
