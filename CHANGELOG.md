@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.45 (2024-05-16)
+
+
+### ✨ Features
+
+* The GPT-4 model has been updated to GPT-4o, which provides a faster response and a better user experience. ([05dcda7](https://github.com/Bengelsoft/success-tracker/commit/05dcda7044233e3362550a249818fc404a19b9a4))
+
 ### 0.0.44 (2024-04-13)
 
 ### 0.0.43 (2024-04-13)
