@@ -13,6 +13,8 @@ The development of SuccessTrack aims to accelerate and support personal growth. 
 - keeping track of habits,
 - Promoting reflection.
 
+![demo success-tracker](docs/img/demo-chat-coach.gif "demo-success-tracker")
+
 ## Contents
 - [What is SuccessTrack](#what-is-successtrack)
 - [Getting started](#getting-started)
@@ -28,7 +30,7 @@ The development of SuccessTrack aims to accelerate and support personal growth. 
 - [License](#license)
 
 ## Getting started
-The latest release of the SuccessTrack application is hosted at "".
+The latest release of the SuccessTrack application is hosted at "https://success-tracker.nl/".
 
 ## Documentation
 
