@@ -2,6 +2,7 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Repository License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg)](LICENSE)
 [![CI/CD Workflow](https://github.com/Bengelsoft/success-tracker/actions/workflows/build_test_qa_release_deploy.yml/badge.svg)](https://github.com/Bengelsoft/success-tracker/actions/workflows/build_test_qa_release_deploy.yml)
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7750/badge)](https://bestpractices.coreinfrastructure.org/projects/7750)
 
 # SuccessTracker
 SuccessTracker: A personal success diary with an AI coach.
