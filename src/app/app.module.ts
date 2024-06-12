@@ -52,7 +52,7 @@ import {PromptsComponent} from './prompts/prompts.component';
 import {AutoCompleteModule} from "primeng/autocomplete";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
-import {HttpClient} from "@angular/common/http";
+import { HttpClient, provideHttpClient } from "@angular/common/http";
 import {DropdownModule} from "primeng/dropdown";
 import { SuccessComponent } from './success/success.component';
 import { ActionbarSuccessComponent } from './success/actionbar-success/actionbar-success.component';
@@ -134,7 +134,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AutoCompleteModule,
     DropdownModule
   ],
-  providers: [MenuService, BreadcrumbService, MessageService],
+  providers: [MenuService, BreadcrumbService, MessageService, provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule {
