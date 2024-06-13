@@ -141,6 +141,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
-           publish_dir: browser/
+           publish_dir: success-tracker/browser
            enable_jekyll: true
            cname: success-tracker.nl
