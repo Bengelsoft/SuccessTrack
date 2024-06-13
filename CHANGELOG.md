@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.53 (2024-06-13)
+
+
+### 🐛 Bug Fixes
+
+* build_test_qa_release_deploy.yml ([e7399dc](https://github.com/Bengelsoft/success-tracker/commit/e7399dca0d6ad0089259f9177c66e8b9a7e8d57b))
+
 ### 0.0.52 (2024-06-13)
 
 
