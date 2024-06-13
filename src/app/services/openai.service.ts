@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {map, Observable} from "rxjs";
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import {SettingsService} from "./settings.service";
 import {AiChatModel} from "../domain/utility/aiChatModel";
 import {ElementOfSuccess} from "../domain/success/element-of-success";
