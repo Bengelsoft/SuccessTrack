@@ -1,0 +1,17 @@
+<p-table
+[value]="succesService.elementsOfSuccess"
+(onRowSelect)="onRowSelect($event, success)"
+(onRowUnselect)="onRowUnselect($event, success)"
+[(selection)]="selectedItems"
+selectionMode="multiple"
+dataKey="code"
+[metaKeySelection]=false >
+<ng-template pTemplate="body" let-success let-rowIndex="rowIndex">
+  <tr [pSelectableRow]="success" [pSelectableRowIndex]="rowIndex">
+    <td>
+      <p-tableCheckbox [value]="success" />
+    </td>
+    <td>{{success.name}}</td>
+  </tr>
+</ng-template>
+</p-table>

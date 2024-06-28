@@ -42,14 +42,7 @@
       <td>
         <p-cellEditor>
           <ng-template pTemplate="input">
-            <p-listbox [options]="succesService.elementsOfSuccess"
-                       [(ngModel)]="success.elementsOfSuccessCodes"
-                       optionValue="code"
-                       optionLabel="name"
-                       [style]="{'width':'15rem'}"
-                       [multiple]="true" [metaKeySelection]="false">
-
-            </p-listbox>
+            <app-list-elements-of-success [success]="success"></app-list-elements-of-success>
           </ng-template>
           <ng-template pTemplate="output">
             <p-tag severity="info" *ngFor="let elementCode of success.elementsOfSuccessCodes"
@@ -59,8 +52,7 @@
       </td>
       <td>
         <div class="flex align-items-center justify-content-center gap-2">
-          <button *ngIf="!editing" pButton pRipple type="button" pInitEditableRow icon="pi pi-pencil"
-                  (click)="onRowEditInit(success)" class="p-button-rounded p-button-text"></button>
+          <button *ngIf="!editing" pButton pRipple type="button" pInitEditableRow icon="pi pi-pencil" class="p-button-rounded p-button-text"></button>
           <button *ngIf="!editing" pButton pRipple type="button" pInitEditableRow icon="pi pi-trash"
                   (click)="onRowRemove (success, ri)" class="p-button-rounded p-button-text"></button>
           <button *ngIf="editing" pButton pRipple type="button" pSaveEditableRow icon="pi pi-check"

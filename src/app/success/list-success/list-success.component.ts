@@ -13,6 +13,12 @@ import {Subscription} from "rxjs";
   templateUrl: './list-success.component.html'
 })
 export class ListSuccessComponent implements OnDestroy, OnInit{
+onRowEditInit(_t12: any) {
+throw new Error('Method not implemented.');
+}
+onInit() {
+throw new Error('Method not implemented.');
+}
   protected succesList: Success[] = [];
 
   // @ts-ignore
@@ -22,8 +28,7 @@ export class ListSuccessComponent implements OnDestroy, OnInit{
     //empty contructor
   }
 
-  onRowEditInit(succes: Success) {
-  }
+
 
   onRowEditSave(succes: Success) {
     let succesTracker: SuccessTracker = this.domainService.succesTrackerDomainBehaviorSubject.getValue();
@@ -55,6 +60,4 @@ export class ListSuccessComponent implements OnDestroy, OnInit{
       this.succesList = value.successes;
     })
   }
-
-  protected readonly Success = Success;
 }
