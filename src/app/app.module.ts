@@ -61,6 +61,7 @@ import { ListSuccessComponent } from './success/list-success/list-success.compon
 import { CreateDialogSuccessComponent } from './success/create-dialog-success/create-dialog-success.component';
 import { ChatSuccessComponent } from './success/coach-chat-success/chat-success/chat-success.component';
 import { CoachChatDialogSuccessComponent } from './success/coach-chat-success/coach-chat-dialog-success.component';
+import { ListElementsOfSuccessComponent } from "./success/common/list-elements-of-success/list-elements-of-success.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -68,74 +69,76 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SettingsComponent,
-    TopbarComponent,
-    ActionbarComponent,
-    FooterComponent,
-    AppMainComponent,
-    MenuComponent,
-    MenuitemComponent,
-    DashboardComponent,
-    ProfileComponent,
-    HistoryComponent,
-    HistoryListComponent,
-    PromptsComponent,
-    SuccessComponent,
-    ActionbarSuccessComponent,
-    CreateSuccessComponent,
-    ListSuccessComponent,
-    CreateDialogSuccessComponent,
-    ChatSuccessComponent,
-    CoachChatDialogSuccessComponent
-  ],
-  imports: [
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    TableModule,
-    ToastModule,
-    FormsModule,
-    ButtonModule,
-    FileUploadModule,
-    CalendarModule,
-    MultiSelectModule,
-    TagModule,
-    DialogModule,
-    TabMenuModule,
-    SpeedDialModule,
-    CardModule,
-    InputTextareaModule,
-    ToolbarModule,
-    RippleModule,
-    ListboxModule,
-    InputTextModule,
-    SliderModule,
-    ChartModule,
-    PasswordModule,
-    InputSwitchModule,
-    ProgressSpinnerModule,
-    SplitButtonModule,
-    CheckboxModule,
-    FullCalendarModule,
-    ConfirmDialogModule,
-    TreeTableModule,
-    TreeModule,
-    AvatarModule,
-    BadgeModule,
-    AutoCompleteModule,
-    DropdownModule
-  ],
-  providers: [MenuService, BreadcrumbService, MessageService, provideHttpClient()],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SettingsComponent,
+        TopbarComponent,
+        ActionbarComponent,
+        FooterComponent,
+        AppMainComponent,
+        MenuComponent,
+        MenuitemComponent,
+        DashboardComponent,
+        ProfileComponent,
+        HistoryComponent,
+        HistoryListComponent,
+        PromptsComponent,
+        SuccessComponent,
+        ActionbarSuccessComponent,
+        CreateSuccessComponent,
+        ListSuccessComponent,
+        CreateDialogSuccessComponent,
+        ChatSuccessComponent,
+        CoachChatDialogSuccessComponent,
+        ListElementsOfSuccessComponent
+    ],
+    providers: [MenuService, BreadcrumbService, MessageService, provideHttpClient()],
+    bootstrap: [AppComponent],
+    imports: [
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        TableModule,
+        ToastModule,
+        FormsModule,
+        ButtonModule,
+        FileUploadModule,
+        CalendarModule,
+        MultiSelectModule,
+        TagModule,
+        DialogModule,
+        TabMenuModule,
+        SpeedDialModule,
+        CardModule,
+        InputTextareaModule,
+        ToolbarModule,
+        RippleModule,
+        ListboxModule,
+        InputTextModule,
+        SliderModule,
+        ChartModule,
+        PasswordModule,
+        InputSwitchModule,
+        ProgressSpinnerModule,
+        SplitButtonModule,
+        CheckboxModule,
+        FullCalendarModule,
+        ConfirmDialogModule,
+        TreeTableModule,
+        TreeModule,
+        AvatarModule,
+        BadgeModule,
+        AutoCompleteModule,
+        DropdownModule,
+
+    ]
 })
 export class AppModule {
 }

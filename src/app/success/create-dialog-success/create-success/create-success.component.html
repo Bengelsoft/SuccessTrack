@@ -14,17 +14,14 @@
         <span>
         <h5>
           {{'Description of the success' | translate}}</h5>
-            <textarea rows="12" style="width: 100%;" pInputTextarea [autoResize]="true"
+            <textarea rows="13" style="width: 100%;" pInputTextarea [autoResize]="true"
                       [(ngModel)]="success.successDescription"></textarea>
         </span>
         </div>
         <div class="col-12 mb-6 lg:col-6 lg:mb-0">
           <h5>{{'The elements of success.' | translate}}
           </h5>
-          <p-listbox [options]="succesService.elementsOfSuccess"
-                     [(ngModel)]="success.elementsOfSuccessCodes"
-                     optionValue="code" optionLabel="name"
-                     [multiple]="true" [metaKeySelection]="false"></p-listbox>
+          <app-list-elements-of-success [success]="success"></app-list-elements-of-success>
         </div>
 
       </div>
