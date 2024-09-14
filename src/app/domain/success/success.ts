@@ -12,7 +12,7 @@ export class Success {
     this._dateOfSucces = date;
     this._successDescription = success;
     this._elementsOfSuccessCodes = elementsOfSucces;
-    this._id = new Date().getTime();
+    this._id = new Date().getTime() + Math.floor(Math.random() * 1000);
   }
 
   get id(): number {
